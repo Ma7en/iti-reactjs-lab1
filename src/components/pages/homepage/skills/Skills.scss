@@ -23,36 +23,53 @@
             display: flex;
             align-items: start;
             justify-content: space-between;
+            flex-wrap: wrap;
             gap: 30px;
 
             .list {
                 flex-basis: 40%;
+
                 ul {
                     list-style: none;
                     padding-left: 0;
+
                     li {
                         margin-bottom: 20px;
                         font-size: 20px;
                         width: 100%;
-                        padding-block: 20px;
                         text-transform: capitalize;
-                        &.active {
-                            border-bottom: 1px solid #fff;
+
+                        a {
+                            display: inline-block;
+                            padding-block: 20px;
+                            color: #fff;
+                            width: 100%;
+                            border-bottom: 1px solid transparent;
+                            transition: var(--main-transition);
+
+                            &.active,
+                            &:hover {
+                                border-color: #fff;
+                                transition: var(--main-transition);
+                            }
                         }
                     }
                 }
             }
+
             .skill-list {
                 flex-basis: 50%;
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
                 align-items: start;
+
                 .skill {
                     display: flex;
                     align-items: center;
                     height: 50px;
                     width: 100%;
+
                     p {
                         text-transform: uppercase;
                         flex-basis: 40%;
@@ -64,16 +81,29 @@
                         color: #fff;
                         height: 100%;
                     }
+
                     .progress {
                         flex-basis: 60%;
                         background-color: #fff;
                         // padding: 20px;
                         height: 100%;
+
                         .progress-bar {
                             height: 100%;
-                            background-color: red;
+                            background-color: chocolate;
                         }
                     }
+                }
+            }
+
+            @media (max-width: 767px) {
+                flex-direction: column;
+                align-items: center;
+
+                .list,
+                .skill-list {
+                    width: 100%;
+                    flex-basis: 100%;
                 }
             }
         }

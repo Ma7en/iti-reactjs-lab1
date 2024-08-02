@@ -28,11 +28,27 @@ export default function Skills() {
                     <div className="content">
                         <div className="list">
                             <ul>
-                                <li className="active">my foucs</li>
-                                <li>ui/ux design</li>
-                                <li>responsive design</li>
-                                <li>web design </li>
-                                <li>mobile app design</li>
+                                <li>
+                                    <a href="#" className="active">
+                                        my foucs
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">ui/ux design</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">responsive design</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">web design</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">mobile app design</a>
+                                </li>
                             </ul>
                         </div>
 

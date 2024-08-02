@@ -37,19 +37,17 @@ export default function Footer() {
                                 <li>
                                     <a href="#">
                                         <FontAwesomeIcon icon={faEnvelope} />
-                                        <FontAwesomeIcon icon={faTwitter} />
-                                        <FontAwesomeIcon icon={faFacebook} />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <FontAwesomeIcon icon={faEnvelope} />
+                                        <FontAwesomeIcon icon={faTwitter} />
                                         {/* <FontAwesomeIcon icon={faLinkedinIn} /> */}
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
-                                        <FontAwesomeIcon icon={faEnvelope} />
+                                        <FontAwesomeIcon icon={faFacebook} />
                                         {/* <FontAwesomeIcon icon={faTwitter} /> */}
                                         {/* <FontAwesomeIcon icon={faTwitter} /> */}
                                     </a>

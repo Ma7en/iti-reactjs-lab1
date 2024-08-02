@@ -1,10 +1,10 @@
 import React from "react";
-import "./AboutMe.scss";
+import "./Bio.scss";
 
-export default function AboutMe() {
+export default function Bio() {
     return (
         <>
-            <div className="about-me">
+            <div className="bio">
                 <div className="container">
                     <div className="content">
                         <div className="title">

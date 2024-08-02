@@ -65,7 +65,7 @@ input:focus {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 100000px;
+    /* height: 100000px; */
 }
 
 :root {

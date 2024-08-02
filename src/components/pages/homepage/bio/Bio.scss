@@ -1,20 +1,26 @@
-.about-me {
+.bio {
     .container {
         padding-block: 50px;
+
         .content {
             display: flex;
             align-items: start;
             justify-content: space-between;
-            // flex-wrap: wrap;
+            flex-wrap: wrap;
             gap: 20px;
+
             .title {
-                flex-basis: 20%;
+                flex-basis: 30%;
+                margin-bottom: 20px;
+
                 h2 {
                     font-size: 40px;
+                    text-transform: capitalize;
                 }
             }
+
             .down {
-                flex-basis: 70%;
+                flex-basis: 65%;
                 display: flex;
                 align-items: start;
                 flex-direction: column;
@@ -34,6 +40,14 @@
                     font-weight: bold;
                     font-size: 20px;
                     text-transform: capitalize;
+                    transition: var(--main-transition);
+                }
+            }
+            @media (max-width: 767px) {
+                flex-direction: column;
+                align-items: center;
+                .down {
+                    align-items: center;
                 }
             }
         }
