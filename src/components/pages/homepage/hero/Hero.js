@@ -10,7 +10,7 @@ export default function Hero() {
                         <h1>Katie Reed</h1>
                         <p>Web Developer & Designer</p>
                         <div>
-                            <a href="#contact">Contact Me</a>
+                            <a href="#footer">Contact Me</a>
                         </div>
                     </div>
                 </div>

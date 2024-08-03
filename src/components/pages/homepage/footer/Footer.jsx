@@ -8,7 +8,7 @@ import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
     return (
         <>
-            <div className="footer">
+            <div className="footer" id="footer">
                 <div className="container">
                     <div className="content">
                         <div className="title">
