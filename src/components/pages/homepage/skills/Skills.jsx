@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import "./Skills.scss";
 
-export default function Skills() {
+function Skills() {
     const [html, setHtml] = useState("100");
     const [css, setCss] = useState("90");
     const [js, setJs] = useState("80");
     const [python, setPyhton] = useState("70");
     const [react, setReact] = useState("60");
     const [scss, setScss] = useState("50");
+    console.log(setHtml, setCss, setJs, setScss, setReact, setPyhton);
 
     return (
         <>
@@ -29,28 +30,29 @@ export default function Skills() {
                         <div className="list">
                             <ul>
                                 <li>
-                                    <a href="#" className="active">
+                                    <a href="#foucs" className="active">
                                         my foucs
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#">ui/ux design</a>
+                                    <a href="#ui">ui/ux design</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">responsive design</a>
+                                    <a href="#responsive">responsive design</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">web design</a>
+                                    <a href="#web">web design</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">mobile app design</a>
+                                    <a href="#mobile">mobile app design</a>
                                 </li>
                             </ul>
                         </div>
+                        {/* 111 - 19777 */}
 
                         <div className="skill-list">
                             {/* html */}
@@ -149,3 +151,5 @@ export default function Skills() {
         </>
     );
 }
+
+export default Skills;

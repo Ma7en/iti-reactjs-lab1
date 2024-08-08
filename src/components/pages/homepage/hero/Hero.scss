@@ -1,11 +1,13 @@
 .hero {
     height: 100vh;
     background: url("https://images8.alphacoders.com/132/1325725.png");
+
     .container {
         display: flex;
         justify-content: start;
         align-items: center;
         height: 100%;
+
         .content {
             color: #fff;
             text-align: center;

@@ -5,7 +5,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faFacebook } from "@fortawesome/free-brands-svg-icons";
 
-export default function Footer() {
+function Footer() {
     return (
         <>
             <div className="footer" id="footer">
@@ -16,40 +16,38 @@ export default function Footer() {
 
                             <ul>
                                 <li>
-                                    {/* <FontAwesomeIcon icon={faEnvelope} /> */}
                                     <FontAwesomeIcon icon={faEnvelope} />
-                                    <a href="#">ms12@gmail.com</a>
+                                    <a href="mailto:ms12@gmail.com">
+                                        ms12@gmail.com
+                                    </a>
                                 </li>
 
                                 <li>
                                     <FontAwesomeIcon icon={faPhone} />
-                                    <a href="#">01200112233</a>
+                                    <a href="tel:01200112233">01200112233</a>
                                 </li>
                             </ul>
                         </div>
 
                         <div className="btn">
-                            <a href="#">contact me</a>
+                            <a href="#contact">contact me</a>
                         </div>
 
                         <div className="social">
                             <ul>
                                 <li>
-                                    <a href="#">
+                                    <a href="mailto:ms12@gmail.com">
                                         <FontAwesomeIcon icon={faEnvelope} />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="https://x.com">
                                         <FontAwesomeIcon icon={faTwitter} />
-                                        {/* <FontAwesomeIcon icon={faLinkedinIn} /> */}
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="https://facebook.com">
                                         <FontAwesomeIcon icon={faFacebook} />
-                                        {/* <FontAwesomeIcon icon={faTwitter} /> */}
-                                        {/* <FontAwesomeIcon icon={faTwitter} /> */}
                                     </a>
                                 </li>
                             </ul>
@@ -62,3 +60,4 @@ export default function Footer() {
         </>
     );
 }
+export default Footer;
